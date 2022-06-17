@@ -22,7 +22,7 @@ from bokeh.tile_providers import get_provider, WIKIMEDIA, CARTODBPOSITRON, STAME
 
 import warnings
 
-data = pd.read_csv('./data/data_covid-19_indonesia.csv')
+data = pd.read_csv('./data_covid-19_indonesia.csv')
 data.set_index('Date', inplace=True)
 
 inProj = Proj(init='epsg:3857')
