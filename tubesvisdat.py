@@ -15,7 +15,7 @@ from bokeh.models import CustomJS, DateRangeSlider
 # read data
 country_list = ['Germany', 'France', 'Finland', 'Italy', 'Ireland', 'Russia']
 
-df = pd.read_csv("./data/full_grouped.csv", parse_dates=['Date'])
+df = pd.read_csv("./full_grouped.csv", parse_dates=['Date'])
 data = df[df.Country.isin(country_list)] 
 # data.head()
 
